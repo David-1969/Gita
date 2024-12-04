@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="Gita.jpg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle">Gita</h2>
+  <p id="albumDescription">
+    "Gita", lançado em 1974, é o quarto álbum de estúdio de Raul Seixas. O disco marca uma fase de amadurecimento artístico, misturando rock, psicodelia e filosofia em letras profundas e poéticas. Com influências de filosofia oriental, especialmente o conceito de "Gita" (do Bhagavad Gita), e de figuras como Aleister Crowley, Raul explora temas como a busca por autoconhecimento, liberdade e o questionamento das convenções sociais. Entre as faixas mais marcantes estão "Gita", "Sociedade da Grã-Ordem Kavernista" e "O Velho do Restelo", que se destacam pela crítica social e pelos arranjos inovadores. O álbum é considerado um dos mais importantes de sua carreira, estabelecendo Raul Seixas como um ícone do rock brasileiro.</p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> Super heroi - Medo da Chuva - As aventuras de Rasul Seixas na cidade de Thor - Água Viva - Moleque Maravilhoso - Sessão das 10
+    <p id="albumDescription"> <strong>Lado 2:</strong> Sociedade Alternativa - O trem das 7 - S.O.S - Preludio - Loteria da Babilonia - Gita</p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
